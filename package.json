@@ -1,6 +1,6 @@
 {
   "name": "@dchest/react-feather",
-  "version": "10.1.6",
+  "version": "10.1.7",
   "description": "React component for Feather icons",
   "main": "dist/index.js",
   "module": "es/index.js",
