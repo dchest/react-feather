@@ -1,3 +1,5 @@
+**Personal fork. Do not use.**
+
 ## React Feather Icons
 
 [![npm version](https://img.shields.io/npm/v/react-feather.svg?style=flat-square)](https://www.npmjs.com/package/react-feather)
