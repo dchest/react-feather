@@ -9,8 +9,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "rebuild-icons": "node ./bin/build.js",
-    "build:bundle": "rm -rf dist && rollup --config rollup.config.js",
-    "build:es": "rm -rf es && babel src --out-dir es",
+    "build:bundle": "rm -rf dist && rollup --config rollup.config.js && cp src/index.d.ts dist/",
+    "build:es": "rm -rf es && babel src --out-dir es && cp src/index.d.ts es/",
     "build": "concurrently \"npm:build:*\""
   },
   "files": [
