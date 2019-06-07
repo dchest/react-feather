@@ -95,7 +95,7 @@ glob(`${rootDir}/src/feather/icons/**.svg`, (err, icons) => {
 
     fs.writeFileSync(location, component, 'utf-8');
 
-    const exportString = `export ${ComponentName} from './icons/${id}';\r\n`;
+    const exportString = `export { default as ${ComponentName} } from './icons/${id}';\n`;
     fs.appendFileSync(
       path.join(rootDir, 'src', 'index.js'),
       exportString,

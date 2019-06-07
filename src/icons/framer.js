@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Bell = props => {
+const Framer = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width={size}
       height={size}
       viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
       fill="none"
       stroke={color}
       strokeWidth="2"
@@ -16,20 +16,19 @@ const Bell = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
-      <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+      <path d="M5 16V9h14V2H5l14 14h-7m-7 0l7 7v-7m-7 0h7" />
     </svg>
   );
 };
 
-Bell.propTypes = {
+Framer.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
-Bell.defaultProps = {
+Framer.defaultProps = {
   color: 'currentColor',
   size: '24',
 };
 
-export default Bell;
+export default Framer;
