@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Tablet = props => {
+const Twitch = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -16,20 +16,19 @@ const Tablet = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <rect x="4" y="2" width="16" height="20" rx="2" ry="2" />
-      <line x1="12" y1="18" x2="12.01" y2="18" />
+      <path d="M21 2H3v16h5v4l4-4h5l4-4V2zM11 11V7M16 11V7" />
     </svg>
   );
 };
 
-Tablet.propTypes = {
+Twitch.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
-Tablet.defaultProps = {
+Twitch.defaultProps = {
   color: 'currentColor',
   size: '24',
 };
 
-export default Tablet;
+export default Twitch;

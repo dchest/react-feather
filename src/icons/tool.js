@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Tablet = props => {
+const Tool = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -16,20 +16,19 @@ const Tablet = props => {
       strokeLinejoin="round"
       {...otherProps}
     >
-      <rect x="4" y="2" width="16" height="20" rx="2" ry="2" />
-      <line x1="12" y1="18" x2="12.01" y2="18" />
+      <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
     </svg>
   );
 };
 
-Tablet.propTypes = {
+Tool.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
-Tablet.defaultProps = {
+Tool.defaultProps = {
   color: 'currentColor',
   size: '24',
 };
 
-export default Tablet;
+export default Tool;
